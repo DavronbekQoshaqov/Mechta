@@ -161,7 +161,7 @@
     <section class="order_check">
         <div class="order_inner">
             <div class="carousel">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme order_carousel">
                     <div class="item">
                         <div class="card">
                             <div class="item_impty"><span>-15%</span></div>
@@ -203,9 +203,6 @@
         </div>
 
     </section>
-
-
-
 
 
 
@@ -263,41 +260,26 @@
     
     
     </section>
-    <!-- Xit tovar -->
+    <!-- Xit product -->
     <section class="xit">
         <h2>Хит товары</h2> 
         <div class="xit_product">
-            <div class="xit_card xit_one">
-                <img src="./img/qozon.svg" alt="qozon">
-                <h5>Кастрюля «Гранит» 2л</h5>
-                <p>Серия Гранит</p>
-                <span>190,000 Сум</span>
-                <button><a href="#">В Корзину</a></button>
+            <div class="owl-carousel owl-theme xit_carousel">
+                <div class="item">
+                    <div class="card">
+                        <div class="item_impty"><span>Xit</span></div>
+                        <img src="./img/qozon.svg" alt="qozon">
+                        <h4>Сковорода - гриль с крышкой и несъемной ручкой «Гранит» 26*26 см</h4>
+                        <p>Серия Гранит</p>
+                        <span>190,000 Сум</span>
+                        <button class="card_btn"><a href="https://m.facebook.com/uzb.mechta/photos/a.108927351237543/108927331237545/?type=3&_rdr">В Корзину</a></button>
+                    </div>
+                </div>
+        
+                </div>
             </div>
-            <div class="xit_card">
-                <img src="./img/qozon.svg" alt="qozon">
-                <h5>Сковорода - гриль с крышкой <br> и несъемной ручкой «Гранит <br>» 26*26 см</h5>
-                <p>Серия Гранит</p>
-                <span>190,000 Сум</span>
-                <button><a href="#">В Корзину</a></button>
-            </div>
-            <div class="xit_card">
-                <img src="./img/qozon.svg" alt="qozon">
-                <h5>Сковорода - гриль с крышкой <br> и несъемной ручкой «Гранит <br>» 26*26 см</h5>
-                <p>Серия Гранит</p>
-                <span>190,000 Сум</span>
-                <button><a href="#">В Корзину</a></button>
-            </div>
-            <div class="xit_card">
-                <img src="./img/qozon.svg" alt="qozon">
-                <h5>Сковорода - гриль с крышкой <br>и несъемной ручкой «Гранит <br>» 26*26 см</h5>
-                <p>Серия Гранит</p>
-                <span>190,000 Сум</span>
-                <button><a href="#">В Корзину</a></button>
-            </div>
-          
-
-        </div>
+        
+            
     </section>
     <section class="futer">
         <div class="futer_impty"></div>
@@ -329,11 +311,7 @@
             </div>
         </div>
     </section>
-
-
-    <h1>Salom dunyo</h1>
-
-
+ 
 
 
 
@@ -342,7 +320,7 @@
     <!-- Owl carousel min js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.order_carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -355,6 +333,22 @@
         },
         1000:{
             items:3,
+        }
+    }
+})
+        $('.xit_carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1,
+        },
+        500:{
+            items:2,
+        },
+        1000:{
+            items:4,
         }
     }
 })

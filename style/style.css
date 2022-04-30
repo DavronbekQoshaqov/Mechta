@@ -448,8 +448,8 @@ header nav .contact_header .shop span {
   background-color: #fff;
   position: relative;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 10px rgba(114, 108, 108, 0.16);
-          box-shadow: 0px 0px 10px rgba(114, 108, 108, 0.16);
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .order_check .order_inner .carousel .card .item_impty {
@@ -697,6 +697,8 @@ header nav .contact_header .shop span {
   font-family: 'Roboto-Regular ';
   font-weight: 700;
   color: #323232;
+  padding: 10px 0px 0 10px;
+  margin-bottom: 30px;
 }
 
 .xit .xit_product {
@@ -710,20 +712,39 @@ header nav .contact_header .shop span {
       flex-wrap: wrap;
 }
 
-.xit .xit_product .xit_card {
+.xit .xit_product .card {
   width: 270px;
   min-height: 350px;
+  margin-left: 20px;
   background-color: #fff;
   margin: 5px;
-  -webkit-box-shadow: 0px 0px 10px rgba(114, 108, 108, 0.16);
-          box-shadow: 0px 0px 10px rgba(114, 108, 108, 0.16);
+  position: relative;
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
-.xit .xit_product .xit_card img {
-  margin: 0 35px;
+.xit .xit_product .card .item_impty {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #148E3C;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
-.xit .xit_product .xit_card h5 {
+.xit .xit_product .card .item_impty span {
+  color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  font-family: 'Roboto-Medium ';
+  font-size: 16px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.xit .xit_product .card h4 {
   font-size: 16px;
   font-family: 'Roboto-Medium ';
   font-weight: 500;
@@ -731,21 +752,21 @@ header nav .contact_header .shop span {
   line-height: 19px;
 }
 
-.xit .xit_product .xit_card p {
+.xit .xit_product .card p {
   padding: 7px 0 0 16px;
   color: #666666;
   font-family: 'Roboto-Regular ';
   font-size: 14px;
 }
 
-.xit .xit_product .xit_card span {
+.xit .xit_product .card span {
   padding: 7px 0 0 16px;
   color: #148E3C;
   font-family: 'Roboto-Regular ';
   font-size: 14px;
 }
 
-.xit .xit_product .xit_card button {
+.xit .xit_product .card .card_btn {
   width: 99px;
   height: 32px;
   border-radius: 2px;
@@ -757,16 +778,8 @@ header nav .contact_header .shop span {
   margin-bottom: 16px;
 }
 
-.xit .xit_product .xit_card button a {
+.xit .xit_product .card .card_btn a {
   color: #148E3C;
-}
-
-.xit .xit_product .xit_one h5 {
-  padding: 10px 0 0 16px;
-}
-
-.xit .xit_product .xit_one p {
-  padding: 44px 0 0 16px;
 }
 
 .futer {
