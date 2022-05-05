@@ -147,13 +147,36 @@ header{
     width: 100%;
     height: 60px;
     background-color:$white-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     position: fixed;
     top: 79px;
     left: 0;
     z-index: 4;
+    .nav_inner{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .nav_container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            font-size: 16px;
+            font-family:'Roboto-Medium ',sans-serif;
+        }
+        span:nth-child(1){
+            font-size: 16px;
+            color:$main-color;
+        }
+
+    }
     .drop_menu{
         position: relative;
         top: 0;
@@ -161,6 +184,11 @@ header{
         // padding-left: 45px;
         img{
             margin-left: 10px;
+            width: 12px;
+            height: 12px;
+        }
+        a{
+            display: flex;
         }
         .drop_down{
             display: flex;
@@ -203,23 +231,6 @@ header{
           
 
         }
-    }
-    .nav_container{
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        li{
-            font-size: 16px;
-            font-family:'Roboto-Medium ',sans-serif;
-        }
-        span:nth-child(1){
-            font-size: 16px;
-            color:$main-color;
-        }
-
     }
 
 }

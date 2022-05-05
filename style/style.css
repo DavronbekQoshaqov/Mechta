@@ -174,18 +174,49 @@ header nav .contact_header .shop span {
   width: 100%;
   height: 60px;
   background-color: #fff;
+  position: fixed;
+  top: 79px;
+  left: 0;
+  z-index: 4;
+}
+
+.nav .nav_inner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .nav_container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: fixed;
-  top: 79px;
-  left: 0;
-  z-index: 4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav_container li {
+  font-size: 16px;
+  font-family: 'Roboto-Medium ',sans-serif;
+}
+
+.nav .nav_container span:nth-child(1) {
+  font-size: 16px;
+  color: #148E3C;
 }
 
 .nav .drop_menu {
@@ -196,6 +227,14 @@ header nav .contact_header .shop span {
 
 .nav .drop_menu img {
   margin-left: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+.nav .drop_menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav .drop_menu .drop_down {
@@ -247,30 +286,6 @@ header nav .contact_header .shop span {
   line-height: 20px;
   width: 100%;
   height: 80px;
-}
-
-.nav .nav_container {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav .nav_container li {
-  font-size: 16px;
-  font-family: 'Roboto-Medium ',sans-serif;
-}
-
-.nav .nav_container span:nth-child(1) {
-  font-size: 16px;
-  color: #148E3C;
 }
 
 .mechta_home {
